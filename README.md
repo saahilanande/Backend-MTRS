@@ -1,4 +1,4 @@
-# Movie Ticket Reservation System
+# Movie Ticket Reservation System (BackEnd)
 This Repository contains the code for backend of the MTRS
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -15,11 +15,9 @@ The Movie Ticket Reservation System is a web application built with Spring Boot 
 
 ## Technologies Used
 
-Language - Java 17 , TypeScript
+Language - Java 17
 
-Front end - React 18, React native 
-
-Backend - Spring boot 3.0
+Framework - Spring boot 3.0
 
 Database - PostgreSQL
 
@@ -33,7 +31,7 @@ Mock testing - Mockito
 
 Logging = Log4j
 
-Build tool - Maven , Vite
+Build tool - Maven
 
 IDE - Intellij
 
