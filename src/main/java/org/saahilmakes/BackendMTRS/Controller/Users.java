@@ -2,9 +2,7 @@ package org.saahilmakes.BackendMTRS.Controller;
 
 import org.saahilmakes.BackendMTRS.Model.UserModel;
 import org.saahilmakes.BackendMTRS.Service.UserService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,6 +21,12 @@ public class Users {
 
         List<UserModel> allUser = userService.GetAllUser();
         return allUser;
+    }
+
+    @PostMapping("/adduser")
+    public String add(@RequestBody UserModel userModel){
+       String response = userService.AddNewUser(userModel);
+       return response;
     }
 
 }
