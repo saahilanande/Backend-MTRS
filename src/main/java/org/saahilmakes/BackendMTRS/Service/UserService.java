@@ -18,20 +18,30 @@ public class UserService {
         return  allUser;
     }
 
-    public String AddNewUser(UserModel userModel){
+    public String AddNewUser(UserModel userModel){ //Takes Parameter from Request body of post request to set Usermodel object
 
-        UserModel newUser = new UserModel();
+        UserModel newUser = new UserModel(); //Creating a new usermodel object to set and passing it to save method
         newUser.setUsername(userModel.getUsername());
         newUser.setEmail(userModel.getEmail());
         newUser.setPassword(userModel.getPassword());
         newUser.setRole(userModel.getRole());
         newUser.setPhone(userModel.getPhone());
         try {
-            usersRepo.save(newUser);
+            usersRepo.save(newUser); //add a user to database
         }
         catch (Exception ex){
             return ""+ex;
         }
         return "User Added Succesfully";
+    }
+
+    public String DeleteUser(Long id){
+        try {
+            usersRepo.deleteById(id); // using the delete method from JPA and passing id from path variable
+        }
+        catch (Exception ex){
+            return ""+ex;
+        }
+        return "Successfully Deleted user by ID" + id;
     }
 }
