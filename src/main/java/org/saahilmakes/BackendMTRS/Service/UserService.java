@@ -18,16 +18,10 @@ public class UserService {
         return  allUser;
     }
 
-    public String AddNewUser(UserModel userModel){ //Takes Parameter from Request body of post request to set Usermodel object
+    public String AddNewUser(UserModel userModel){ //Takes Parameter from Request body of post request
 
-        UserModel newUser = new UserModel(); //Creating a new usermodel object to set and passing it to save method
-        newUser.setUsername(userModel.getUsername());
-        newUser.setEmail(userModel.getEmail());
-        newUser.setPassword(userModel.getPassword());
-        newUser.setRole(userModel.getRole());
-        newUser.setPhone(userModel.getPhone());
         try {
-            usersRepo.save(newUser); //add a user to database
+            usersRepo.save(userModel); //add a user to database
         }
         catch (Exception ex){
             return ""+ex;
