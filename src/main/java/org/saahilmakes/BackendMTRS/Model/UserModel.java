@@ -2,23 +2,22 @@ package org.saahilmakes.BackendMTRS.Model;
 
 import jakarta.persistence.*;
 @Entity
-@Table(name = "Users")
+@Table(name = "`users`")
 public class UserModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "user_id")
     private long user_id;
 
-    @Column(name = "role")
+
     private String role;
-    @Column(name = "username")
+
     private String username;
-    @Column(name = "password")
+
     private String password;
-    @Column(name = "email")
+
     private String email;
-    @Column(name = "phone")
+
     private Integer phone;
 
     public long getUser_id() {
