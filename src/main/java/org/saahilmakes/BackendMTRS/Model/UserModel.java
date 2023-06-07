@@ -1,6 +1,9 @@
 package org.saahilmakes.BackendMTRS.Model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
 @Entity
 @Table(name = "`users`")
 public class UserModel {
@@ -9,13 +12,15 @@ public class UserModel {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long user_id;
 
-
+    @NotBlank(message = "role cannot be blank")
     private String role;
-
+    @NotBlank(message = "Username cannot be blank")
     private String username;
 
+    @NotBlank(message = "Password cannot be blank")
     private String password;
 
+    @Email(message = "Invalid Email")
     private String email;
 
     private Integer phone;

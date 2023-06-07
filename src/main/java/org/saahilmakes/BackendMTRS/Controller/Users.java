@@ -1,11 +1,15 @@
 package org.saahilmakes.BackendMTRS.Controller;
 
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotBlank;
 import org.saahilmakes.BackendMTRS.Model.UserModel;
 import org.saahilmakes.BackendMTRS.Service.UserService;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Validated
 @RestController
 @RequestMapping("/user")
 public class Users {
@@ -24,7 +28,7 @@ public class Users {
     }
 
     @PostMapping("/signup") //Endpoint to add a new user in database
-    public String add(@RequestBody UserModel userModel){
+    public String add(@RequestBody @Valid UserModel userModel){
        String response = userService.AddNewUser(userModel); //Using Add new user method from Service class which takes Usermodel as argument to set varaibles
        return response;
     }
