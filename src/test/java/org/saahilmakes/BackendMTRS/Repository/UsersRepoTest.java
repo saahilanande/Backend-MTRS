@@ -59,4 +59,24 @@ class UsersRepoTest {
         //Then
         assertThat(expected).isFalse();
     }
+
+    @Test
+    void itShouldGetUserDetailsByEmail() {
+
+        //Given
+        UserModel newUser = new UserModel();
+        newUser.setEmail("test@test.com");
+        newUser.setPhone(9999);
+        newUser.setPassword("test");
+        newUser.setRole("test");
+        newUser.setUsername("test");
+        usersRepo.save(newUser);
+        String emailToCheck = "test@test.com";
+
+        //When
+        UserModel user = usersRepo.getUserDetailsbyEmail(emailToCheck);
+
+        //Then
+        assertThat(user).isEqualTo(newUser);
+    }
 }

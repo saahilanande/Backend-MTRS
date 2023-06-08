@@ -14,4 +14,10 @@ public interface UsersRepo extends JpaRepository<UserModel, Long> {
     @Query(value = "select case when count(*) > 0 then true else false end from users where email = :email", nativeQuery = true)
     boolean findEmail(String email);
 
+
+    //Getting
+    @Query(value = "select * from users where email = :email", nativeQuery = true)
+    UserModel getUserDetailsbyEmail(String email);
+
+
 }
