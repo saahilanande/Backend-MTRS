@@ -21,12 +21,18 @@ public class UserService {
     public String AddNewUser(UserModel userModel){ //Takes Parameter from Request body of post request
 
         try {
-            usersRepo.save(userModel); //add a user to database
+            List<UserModel> emailExist = usersRepo.findEmail(userModel.getEmail()); //Check for email
+            if(emailExist.isEmpty()){
+                usersRepo.save(userModel); //add a user to database
+                return "User Added Succesfully";
+            }
+            else {
+                return "Email exist";
+            }
         }
         catch (Exception ex){
             return ""+ex;
         }
-        return "User Added Succesfully";
     }
 
     public String DeleteUser(Long id){
