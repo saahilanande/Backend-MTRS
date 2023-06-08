@@ -11,7 +11,13 @@ import java.util.List;
 public interface UsersRepo extends JpaRepository<UserModel, Long> {
 
     //Check for email
-    @Query(value = "select case when count(u) > 0 then true else false end from users u where email = :email", nativeQuery = true)
+    @Query(value = "select case when count(*) > 0 then true else false end from users where email = :email", nativeQuery = true)
     boolean findEmail(String email);
+
+
+    //Getting
+    @Query(value = "select * from users where email = :email", nativeQuery = true)
+    UserModel getUserDetailsbyEmail(String email);
+
 
 }
