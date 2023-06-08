@@ -41,7 +41,13 @@ class UserServiceTest {
     }
 
     @Test
-    @Disabled
-    void deleteUser() {
+    void canDeleteUser() {
+        //Given
+        long id = 2;
+        //When
+        userService.DeleteUser(id);
+        //Then
+        verify(usersRepo).deleteById(id);
+
     }
 }
