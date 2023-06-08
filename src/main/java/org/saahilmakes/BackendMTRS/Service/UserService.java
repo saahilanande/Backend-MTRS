@@ -21,13 +21,13 @@ public class UserService {
     public String AddNewUser(UserModel userModel){ //Takes Parameter from Request body of post request
 
         try {
-            List<UserModel> emailExist = usersRepo.findEmail(userModel.getEmail()); //Check for email
-            if(emailExist.isEmpty()){
+            boolean emailExist = usersRepo.findEmail(userModel.getEmail()); //Check for email
+            if(!emailExist){ //If email does not exist in the database
                 usersRepo.save(userModel); //add a user to database
                 return "User Added Succesfully";
             }
-            else {
-                return "Email exist";
+            else { //If the email exist
+                return "Email already exist";
             }
         }
         catch (Exception ex){
