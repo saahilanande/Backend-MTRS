@@ -19,8 +19,15 @@ public class UserService implements UserDetailsService {
     }
 
     public List<UserModel> GetAllUser(){
-        List<UserModel> allUser = usersRepo.findAll();
-        return  allUser;
+        try {
+            List<UserModel> allUser = usersRepo.findAll();
+            return  allUser;
+        }
+        catch (Exception ex){
+            List<UserModel> EmptyUser = null;
+            return  EmptyUser;
+        }
+        
     }
 
     public String AddNewUser(UserModel userModel){ //Takes Parameter from Request body of post request
@@ -56,6 +63,6 @@ public class UserService implements UserDetailsService {
         if (userFound == null) {
             return null;
         }
-        return new User(userFound.getUsername(), userFound.getPassword(), new ArrayList<>());
+        return new User(userFound.getEmail(), userFound.getPassword(), new ArrayList<>());
     }
 }
