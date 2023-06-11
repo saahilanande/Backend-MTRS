@@ -27,9 +27,12 @@ class UserServiceTest {
     @Autowired
     AuthenticationManager authenticationManager;
 
+    @Autowired
+    TokenService tokenService;
+
     @BeforeEach
     void setUp() {
-        userService = new UserService(usersRepo, authenticationManager);
+        userService = new UserService(usersRepo, authenticationManager, tokenService);
     }
 
     @Test

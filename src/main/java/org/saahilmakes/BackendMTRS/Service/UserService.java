@@ -6,16 +6,21 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class UserService {
     private final UsersRepo usersRepo;
     private final AuthenticationManager authenticationManager;
 
-    public UserService(UsersRepo usersRepo, AuthenticationManager authenticationManager) {
+    private final TokenService tokenService;
+
+    public UserService(UsersRepo usersRepo, AuthenticationManager authenticationManager, TokenService tokenService) {
         this.usersRepo = usersRepo;
         this.authenticationManager = authenticationManager;
+        this.tokenService = tokenService;
     }
 
     public List<UserModel> GetAllUser(){
@@ -57,13 +62,20 @@ public class UserService {
         return "Successfully Deleted user by ID" + id;
     }
 
-    public String ValidateUser(String email,String password){ //Service used for validating User by email and password
+    public Map<String, String> ValidateUser(String email, String password){ //Service used for validating User by email and password
+        Map<String, String> data; // Create a object to return the token and email of the user
+        data = new HashMap<>();
         try {
-            authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(email, password));
+            authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(email, password)); //Check if the username pass is correct
+            String token = tokenService.generateToken(email);// Signing and generating a JWT token
+            data.put("message","User is Valid");
+            data.put("email", email);
+            data.put("jwt", token);
+            return data;
         }
         catch (BadCredentialsException ex){
-            return "Invalid User " + ex;
+            data.put("message","Invalid");
+            return data;
         }
-        return "User Validated";
     }
 }
