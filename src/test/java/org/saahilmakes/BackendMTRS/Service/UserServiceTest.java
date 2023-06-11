@@ -8,7 +8,10 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.saahilmakes.BackendMTRS.Model.UserModel;
 import org.saahilmakes.BackendMTRS.Repository.UsersRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.security.authentication.AuthenticationManager;
+
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.mockito.Mockito.verify;
 
@@ -21,9 +24,12 @@ class UserServiceTest {
 
     private UserService userService;
 
+    @Autowired
+    AuthenticationManager authenticationManager;
+
     @BeforeEach
     void setUp() {
-        userService = new UserService(usersRepo);
+        userService = new UserService(usersRepo, authenticationManager);
     }
 
     @Test
