@@ -1,21 +1,21 @@
 package org.saahilmakes.BackendMTRS.Service;
 import org.saahilmakes.BackendMTRS.Model.UserModel;
 import org.saahilmakes.BackendMTRS.Repository.UsersRepo;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class UserService implements UserDetailsService {
+public class UserService {
     private final UsersRepo usersRepo;
+    private final AuthenticationManager authenticationManager;
 
-    public UserService(UsersRepo usersRepo) {
+    public UserService(UsersRepo usersRepo, AuthenticationManager authenticationManager) {
         this.usersRepo = usersRepo;
+        this.authenticationManager = authenticationManager;
     }
 
     public List<UserModel> GetAllUser(){
@@ -50,12 +50,13 @@ public class UserService implements UserDetailsService {
         return "Successfully Deleted user by ID" + id;
     }
 
-    @Override
-    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        UserModel userFound = usersRepo.getUserDetailsbyEmail(email);
-        if (userFound == null) {
-            return null;
+    public String ValidateUser(String email,String password){ //Service used for validating User by email and password
+        try {
+            authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(email, password));
         }
-        return new User(userFound.getUsername(), userFound.getPassword(), new ArrayList<>());
+        catch (BadCredentialsException ex){
+            return "Invalid User " + ex;
+        }
+        return "User validated";
     }
 }
