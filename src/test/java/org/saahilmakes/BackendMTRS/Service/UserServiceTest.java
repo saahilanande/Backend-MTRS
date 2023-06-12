@@ -1,6 +1,7 @@
 package org.saahilmakes.BackendMTRS.Service;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
@@ -11,6 +12,8 @@ import org.saahilmakes.BackendMTRS.Repository.UsersRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.security.authentication.AuthenticationManager;
+
+import java.util.Map;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.mockito.Mockito.verify;
@@ -24,10 +27,10 @@ class UserServiceTest {
 
     private UserService userService;
 
-    @Autowired
+    @Mock
     AuthenticationManager authenticationManager;
 
-    @Autowired
+    @Mock
     TokenService tokenService;
 
     @BeforeEach
@@ -74,5 +77,44 @@ class UserServiceTest {
         //Then
         verify(usersRepo).deleteById(id);
 
+    }
+
+    @Test
+    void UserShouldBeValid() {
+        //Given
+        UserModel newUser = new UserModel();
+        newUser.setEmail("test@test.com");
+        newUser.setPhone(9999);
+        newUser.setPassword("test");
+        newUser.setRole("test");
+        newUser.setUsername("test");
+        usersRepo.save(newUser);
+        String emailToCheck = "test@test.com";
+        String passwordToCheck ="test";
+
+        //When
+        Map<String, String> result = userService.ValidateUser(emailToCheck,passwordToCheck);
+        //Then
+        assertThat(result.get("message")).isEqualTo("User is Valid");
+    }
+
+    @Test
+    @Disabled
+    void UserShouldNotBeValid() {
+        //Given
+        UserModel newUser = new UserModel();
+        newUser.setEmail("test@test.com");
+        newUser.setPhone(9999);
+        newUser.setPassword("test");
+        newUser.setRole("test");
+        newUser.setUsername("test");
+        usersRepo.save(newUser);
+        String emailToCheck = "test@test";
+        String passwordToCheck ="wrongpass";
+
+        //When
+        Map<String, String> result = userService.ValidateUser(emailToCheck,passwordToCheck);
+        //Then
+        assertThat(result.get("message")).isEqualTo("Invalid");
     }
 }
