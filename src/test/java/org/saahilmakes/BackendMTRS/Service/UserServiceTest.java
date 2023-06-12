@@ -95,7 +95,7 @@ class UserServiceTest {
         //When
         Map<String, String> result = userService.ValidateUser(emailToCheck,passwordToCheck);
         //Then
-        assertThat(result.get("message")).isEqualTo("User is Valid");
+        assertThat(result.get("message")).isEqualTo("Login successful");
     }
 
     @Test
