@@ -1,9 +1,13 @@
 package org.saahilmakes.BackendMTRS.Service;
 import org.saahilmakes.BackendMTRS.Model.UserModel;
 import org.saahilmakes.BackendMTRS.Repository.UsersRepo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -14,7 +18,6 @@ import java.util.Map;
 public class UserService {
     private final UsersRepo usersRepo;
     private final AuthenticationManager authenticationManager;
-
     private final TokenService tokenService;
 
     public UserService(UsersRepo usersRepo, AuthenticationManager authenticationManager, TokenService tokenService) {
@@ -22,6 +25,9 @@ public class UserService {
         this.authenticationManager = authenticationManager;
         this.tokenService = tokenService;
     }
+
+    @Autowired
+    PasswordEncoder passwordEncode;
 
     public List<UserModel> GetAllUser(){
         try {
@@ -40,6 +46,7 @@ public class UserService {
         try {
             boolean emailExist = usersRepo.findEmail(userModel.getEmail()); //Check for email
             if(!emailExist){ //If email does not exist in the database
+                userModel.setPassword(passwordEncode.encode(userModel.getPassword())); //Encoding password before saving
                 usersRepo.save(userModel); //add a user to database
                 return "User Added Succesfully";
             }
@@ -62,20 +69,19 @@ public class UserService {
         return "Successfully Deleted user by ID" + id;
     }
 
-    public Map<String, String> ValidateUser(String email, String password){ //Service used for validating User by email and password
+    public ResponseEntity<Object> ValidateUser(String email, String password){ //Service used for validating User by email and password
         Map<String, String> data; // Create a object to return the token and email of the user
         data = new HashMap<>();
         try {
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(email, password)); //Check if the username pass is correct
             String token = tokenService.generateToken(email);// Signing and generating a JWT token
-            data.put("message","User is Valid");
+            data.put("message","Login successful");
             data.put("email", email);
             data.put("jwt", token);
-            return data;
+            return new ResponseEntity<>(data, HttpStatus.OK);
         }
         catch (BadCredentialsException ex){
-            data.put("message","Invalid");
-            return data;
+            return new ResponseEntity<>("Invalid email or password", HttpStatus.FORBIDDEN);
         }
     }
 }

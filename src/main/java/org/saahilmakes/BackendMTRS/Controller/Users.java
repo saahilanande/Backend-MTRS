@@ -5,11 +5,11 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import org.saahilmakes.BackendMTRS.Model.UserModel;
 import org.saahilmakes.BackendMTRS.Service.UserService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Map;
 
 @Validated
 @RestController
@@ -42,8 +42,8 @@ public class Users {
     }
 
     @PostMapping("/login/{email}/{password}")
-    public Map<String, String> login(@PathVariable("email") @NotBlank @Email String email, @PathVariable("password") @NotBlank String password){
-        Map<String, String> response = userService.ValidateUser(email,password);
+    public ResponseEntity login(@PathVariable("email") @NotBlank @Email String email, @PathVariable("password") @NotBlank String password){
+        ResponseEntity response = userService.ValidateUser(email,password);
         return response;
     }
 
