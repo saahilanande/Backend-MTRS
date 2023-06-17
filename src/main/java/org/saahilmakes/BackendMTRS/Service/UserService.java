@@ -41,21 +41,21 @@ public class UserService {
         
     }
 
-    public String AddNewUser(UserModel userModel){ //Takes Parameter from Request body of post request
+    public ResponseEntity<Object> AddNewUser(UserModel userModel){ //Takes Parameter from Request body of post request
 
         try {
             boolean emailExist = usersRepo.findEmail(userModel.getEmail()); //Check for email
             if(!emailExist){ //If email does not exist in the database
                 userModel.setPassword(passwordEncode.encode(userModel.getPassword())); //Encoding password before saving
                 usersRepo.save(userModel); //add a user to database
-                return "User Added Succesfully";
+                return new ResponseEntity<>("User Added Succesfully", HttpStatus.OK);
             }
             else { //If the email exist
-                return "Email already exist";
+                return new ResponseEntity<>("Email already exist", HttpStatus.ALREADY_REPORTED);
             }
         }
         catch (Exception ex){
-            return ""+ex;
+            return new ResponseEntity<>(""+ex, HttpStatus.BAD_REQUEST);
         }
     }
 
