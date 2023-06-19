@@ -1,8 +1,6 @@
 package org.saahilmakes.BackendMTRS.Controller;
 
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
 import org.saahilmakes.BackendMTRS.Model.UserModel;
 import org.saahilmakes.BackendMTRS.Service.UserService;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +12,6 @@ import java.util.List;
 @Validated
 @RestController
 @RequestMapping("/user")
-@CrossOrigin
 public class Users {
 
     private final UserService userService;
@@ -42,9 +39,9 @@ public class Users {
         return response;
     }
 
-    @PostMapping("/login/{email}/{password}") //Endpoint to validate user with the database
-    public ResponseEntity login(@PathVariable("email") @NotBlank @Email String email, @PathVariable("password") @NotBlank String password){
-        ResponseEntity response = userService.ValidateUser(email,password);
+    @PostMapping("/login") //Endpoint to validate user with the database
+    public ResponseEntity login(@RequestBody UserModel user){
+        ResponseEntity response = userService.ValidateUser(user.getEmail(),user.getPassword());
         return response;
     }
 

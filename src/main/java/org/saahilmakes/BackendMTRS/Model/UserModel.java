@@ -14,12 +14,12 @@ public class UserModel {
 
     @NotBlank(message = "role cannot be blank")
     private String role;
-    @NotBlank(message = "Username cannot be blank")
     private String username;
 
     @NotBlank(message = "Password cannot be blank")
     private String password;
 
+    @NotBlank(message = "Password cannot be blank")
     @Email(message = "Invalid Email")
     private String email;
 
