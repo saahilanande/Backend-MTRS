@@ -63,6 +63,7 @@ public class SecurityConfig {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .oauth2ResourceServer((oauth2ResourceServer) -> oauth2ResourceServer.jwt((jwt) -> jwt.decoder(jwtDecoder())))
                 .httpBasic(withDefaults())
+                .oauth2Login(withDefaults())
                 .cors(Customizer.withDefaults()) // by default uses a Bean by the name of corsConfigurationSource
                 .build();
     }
