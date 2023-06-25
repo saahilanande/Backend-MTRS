@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS users (
 	user_id serial PRIMARY KEY,
 	"role" VARCHAR ( 50 ) NOT NULL,
 	username VARCHAR ( 50 ) NOT NULL,
-	"password" VARCHAR ( 50 ) NOT NULL,
+	"password" VARCHAR ( 500 ) NOT NULL,
 	email VARCHAR ( 255 ) UNIQUE NOT NULL,
 	phone int
 );
