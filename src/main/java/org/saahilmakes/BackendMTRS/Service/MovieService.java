@@ -20,11 +20,16 @@ public class MovieService {
     }
 
     public List<MovieModel> getLatestMovies() {
+        int pageNo = 0;
+        int pageize = 10;
 
+        Sort sort = Sort.by("rating").descending();
+        Pageable sortedByYear = PageRequest.of(0, 3,sort);
 
-        List<MovieModel> getTheLatestMovies = movieRepo.findAll();
+        Page<MovieModel> getTheLatestMovies = movieRepo.findAll(sortedByYear);
+        List<MovieModel> listOfMovies = getTheLatestMovies.getContent();
 
-        return getTheLatestMovies;
+        return listOfMovies;
     }
 
 }

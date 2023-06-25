@@ -8,16 +8,16 @@ public class MovieModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long movie_id;
+    private long movieId;
     private String title;
     private String genre;
     private String duration;
-    private String movie_img;
-    private int release_date;
+    private String movieImg;
+    private int releaseDate;
     private int rating;
 
-    public long getMovie_id() {
-        return movie_id;
+    public long getMovieId() {
+        return movieId;
     }
 
     public String getTitle() {
@@ -44,20 +44,20 @@ public class MovieModel {
         this.duration = duration;
     }
 
-    public String getMovie_img() {
-        return movie_img;
+    public String getMovieImg() {
+        return movieImg;
     }
 
-    public void setMovie_img(String movie_img) {
-        this.movie_img = movie_img;
+    public void setMovieImg(String movieImg) {
+        this.movieImg = movieImg;
     }
 
-    public int getRelease_date() {
-        return release_date;
+    public int getReleaseDate() {
+        return releaseDate;
     }
 
-    public void setRelease_date(int release_date) {
-        this.release_date = release_date;
+    public void setReleaseDate(int releaseDate) {
+        this.releaseDate = releaseDate;
     }
 
     public int getRating() {
