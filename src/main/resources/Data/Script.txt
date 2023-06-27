@@ -1,0 +1,3 @@
+\COPY movies(movie_id,movie_img,title,release_date,rating,genre,duration) FROM 'G:\Movie Ticket Reservation System\Backend-MTRS\src\main\resources\Data\Movies.csv' DELIMITER ',' CSV HEADER;
+
+\COPY Theaters(theater_id,name,city,state,capacity) FROM 'G:\Movie Ticket Reservation System\Backend-MTRS\src\main\resources\Data\Theaters.csv' DELIMITER ',' CSV HEADER;

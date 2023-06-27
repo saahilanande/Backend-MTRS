@@ -8,55 +8,64 @@ public class MovieModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long theater_id;
-    private String name;
-    private String address;
-    private String city;
-    private String state;
-    private int capacity;
+    private long movieId;
+    private String title;
+    private String genre;
+    private String duration;
+    private String movieImg;
+    private int releaseDate;
+    private int rating;
 
-    public long getTheater_id() {
-        return theater_id;
+    public long getMovieId() {
+        return movieId;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getAddress() {
-        return address;
+    public String getGenre() {
+        return genre;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 
-    public String getCity() {
-        return city;
+    public String getDuration() {
+        return duration;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setDuration(String duration) {
+        this.duration = duration;
     }
 
-    public String getState() {
-        return state;
+    public String getMovieImg() {
+        return movieImg;
     }
 
-    public void setState(String state) {
-        this.state = state;
+    public void setMovieImg(String movieImg) {
+        this.movieImg = movieImg;
     }
 
-    public int getCapacity() {
-        return capacity;
+    public int getReleaseDate() {
+        return releaseDate;
     }
 
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
+    public void setReleaseDate(int releaseDate) {
+        this.releaseDate = releaseDate;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
     }
 
 }

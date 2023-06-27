@@ -59,7 +59,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
                 .csrf(csrf -> csrf.disable())
-                .authorizeHttpRequests(auth -> auth.requestMatchers("/user/login/**", "/user/signup/**").permitAll().anyRequest().authenticated())
+                .authorizeHttpRequests(auth -> auth.requestMatchers("/user/login/**", "/user/signup/**", "/movie/**").permitAll().anyRequest().authenticated())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .oauth2ResourceServer((oauth2ResourceServer) -> oauth2ResourceServer.jwt((jwt) -> jwt.decoder(jwtDecoder())))
                 .httpBasic(withDefaults())

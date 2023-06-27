@@ -1,151 +1,120 @@
-theater_id	name	state	city	capacity
-	Lafitte Cinema 4	Abbeville	LA	4
-	Frank's Theatre	Abbeville	LA	1
-	Abbeville Opera House	"Abbeville, "	"SC, "	1
-	Horizon Cinemas Aberdeen	"Aberdeen, , "	MD	8
-	Elkin Theatre	"Aberdeen, , "	MS	1
-	Golden Ticket Aberdeen 9	"Aberdeen, , "	SD	9
-	Capitol Theatre	"Aberdeen, , "	SD	1
-	Dyess Air Force Base Theater	"Abilene, , "	TX	1
-	Cinemark Abilene and XD	Abilene	TX	12
-	Paramount Theatre	"Abilene,"	TX	1
-	Century 12	"Abilene, "	TX	12
-	Abilene Premier LUX Cine 10	"Abilene, "	TX	10
-	Town & Country Drive-In	"Abilene, "	TX	4
-	Regal Bel Air Stadium 14	"Abingdon,"	TX	14
-	Abingdon Cinemall	"Abingdon,"	TX	12
-	Barter Theatre	"Abingdon,"	TX	1
-	NCG Acworth Cinemas	"Acworth, "	TX	10
-	Ada Theatre	"Ada, "	OK	1
-	Cinemark Ada	"Ada, "	OK	8
-	eMcSwain Theatre	"Ada, "	OK	1
-	Topia Arts Center	"Adams,  "	"MA,"	1
-	TheatreAdams Community Theatre	"Adams, "	"WI, "	1
-	CinemaMarcus Addison Cinema	"Addison,"	" IL, "	21
-	AMC Village On The Parkway 9	"Addison, "	"TX, "	9
-	Studio South I & II	Adrian	MI	1
-	Croswell Opera House	Adrian	MI	1
-	Adrian Digital Cinema 10	"Adrian, "	MI	10
-	Ford Theatre	"Afton, ,"	WY	1
-	Agawam Cinemas	"Agawam, , "	MA	2
-	Agoura Hills Stadium 8	"Agoura Hills, , "	CA	8
-	Gallery Theatre	"Ahoskie, "	"NC, "	1
-	Pearlridge West 12	"Aiea, "	"HI, "	12
-	Regal Mall 8	"Aiken, "	"SC, "	8
-	Ainsworth Grand Theater	"Ainsworth, "	"NE, "	1
-	B & B Theatres Airway Heights 8	"Airway Heights, "	"WA, "	8
-	Rialto Theatre	"Aitkin, "	"MN, "	1
-	Nightlight Cinema	"Akron, "	"OH, "	1
-	Regal Independence Stadium 10	"Akron, "	"OH, "	10
-	Regal Interstate Park Stadium 18	"Akron, "	"OH, "	18
-	Rialto Theatre	"Akron, "	"OH, "	1
-	Highland Square Theatre	"Akron, "	"OH, "	1
-	Akron Civic Theatre	"Akron, "	"OH, "	1
-	Linda Theatre	"Akron, "	"OH, "	1
-	AmStar Stadium 14	"Alabaster, "	"AL, "	14
-	Alameda Theatre	"Alameda, "	"CA, "	8
-	Aviator 10	"Alamogordo, "	"NM, "	10
-	ArtsFlickenger Center for Performing...	"Alamogordo, "	"NM, "	1
-	Sands Theatre	"Alamogordo, "	"NM, "	1
-	Ski-Hi 6 Theatres	"Alamosa, "	"CO, "	6
-	TheaterFlint RiverQuarium Imagination	"Albany, "	"GA, "	1
-	AMC Classic Albany 16	"Albany, "	"GA, "	16
-	State Theatre	"Albany, "	"GA, "	1
-	Regal Crossgates Stadium 18 & IMAX	"Albany, "	"NY, "	18
-	Madison Theatre	"Albany, "	"NY, "	4
-	Spectrum 8 Theatres	"Albany, "	"NY, "	8
-	Palace Theatre	"Albany, "	"NY, "	1
-	Albany Cinemas	"Albany, "	"OR, "	7
-	Albany Civic Theater	"Albany, "	"OR, "	1
-	Pix Theater	"Albany, "	"OR, "	1
-	Whitney Theatre	"Albany, "	"TX, "	1
-	Aztec Theatre	"Albany, "	"TX, "	1
-	Southeast Eastgate Cinemas	"Albemarle, "	"NC, "	5
-	Badin Road Drive-In	"Albemarle, "	"NC, "	1
-	Mall Cinema 7 Theatre	"Albert Lea, "	"MN, "	7
-	Lucas Cinemas Albertville	"Albertville, "	"AL, "	10
-	Bohm Theatre	"Albion, "	"MI, "	2
-	Gateway Theatre	"Albion, "	"NE, "	1
-	AMC Albuquerque 12	"Albuquerque, "	"NM, "	12
-	Century Rio 24	"Albuquerque, "	"NM, "	24
-	Regal Winrock Stadium 16 IMAX & RPX	"Albuquerque, "	"NM, "	16
-	Flix Brewhouse Albuquerque	"Albuquerque, "	"NM, "	8
-	Icon Cinemas San Mateo NE	"Albuquerque, "	"NM, "	8
-	Cottonwood Stadium 16	"Albuquerque, "	"NM, "	16
-	Icon Cinemas 4 Hills Village	"Albuquerque, "	"NM, "	11
-	Verus Research DynaTheater	"Albuquerque, "	"NM, "	1
-	Southwest Film Center	"Albuquerque, "	"NM, "	1
-	El Rey Theatre	"Albuquerque, "	"NM, "	1
-	Guild Cinema	"Albuquerque, "	"NM, "	1
-	KiMo Theatre	"Albuquerque, "	"NM, "	1
-	Hiland Theater	"Albuquerque, "	"NM, "	1
-	Aledo Opera House	"Aledo, "	"IL, "	1
-	Alexander City Theatre II	"Alexander City, "	"AL, "	1
-	Playhouse Cinemas	"Alexander City, "	"AL, "	2
-	Bay Drive-In	"Alexandria Bay, "	"NY, "	2
-	Alex Theatre	"Alexandria, "	"IN, "	1
-	Grand 16	"Alexandria, "	"LA, "	16
-	Alexandria Area Arts Association...	"Alexandria, "	"MN, "	2
-	AMC Hoffman Center 22	"Alexandria, "	"VA, "	22
-	Kingstowne Cinemas 16	"Alexandria, "	"VA, "	16
-	Algona Theatre	"Algona, "	"IA, "	3
-	State 5 Theatre	"Algona, "	"IA, "	3
-	Edwards Alhambra Renaissance 14 & IMAX	"Alhambra, "	"CA, "	14
-	Plaza IV Theater	"Alice, "	"TX, "	4
-	Edwards Aliso Viejo Stadium 20 & IMAX	"Aliso Viejo, "	"CA, "	1
-	Old Regent Theatre	"Allegan, "	"MI, "	1
-	Cinemark Allen 16 and XD	"Allen, "	"TX, "	16
-	Carolina Theatre	"Allendale, "	"SC, "	1
-	Theatre514	"Allentown, "	"PA, "	1
-	Cedar Crest College Alumnae Audi...	"Allentown, "	"PA, "	1
-	Movie Tavern by Marcus Trexlertown	"Allentown, "	"PA, "	11
-	AMC Classic Allentown 16	"Allentown, "	"PA, "	16
-	Miller Symphony Hall	"Allentown, "	"PA, "	1
-	AMC Tilghman Square 8	"Allentown, "	"PA, "	8
-	Nineteenth Street Theatre	"Allentown, "	"PA, "	1
-	Alliance Theatre	"Alliance, "	"NE, "	5
-	Sandhills Drive-In	"Alliance, "	"NE, "	1
-	Bacon Theatre	"Alma, "	"GA, "	1
-	Alma Cinemas	"Alma, "	"MI, "	6
-	Strand Theatre	"Alma, "	"MI, "	1
-	Parrot Theatre	"Alma, "	"NE, "	1
-	Big River Theatre	"Alma, "	"WI, "	1
-	Maltz Opera House	"Alpena, "	"MI, "	1
-	Sanctuary Cinema	"Alpena, "	"MI, "	3
-	AMC Dine-In North Point Mall 12	"Alpharetta, "	"GA, "	12
-	CMX CinéBistro Halcyon	"Alpharetta, "	"GA, "	10
-	Studio Movie Grill - North Point	"Alpharetta, "	"GA, "	14
-	Regal Avalon 12 & RPX	"Alpharetta, "	"GA, "	12
-	Rangra Theatres	"Alpine, "	"TX, "	2
-	Granada Theatre	"Alpine, "	"TX, "	1
-	Roxy Theatre	"Alta, "	"IA, "	1
-	Amory Twin Cinema	"Amory, "	"MS, "	2
-	Washoe Theater	"Anaconda, "	"MT, "	1
-	Anacortes Cinemas	"Anacortes, "	"WA, "	3
-	Redskin Theatre	"Anadarko, "	"OK, "	2
-	Magic Eye Theater	"Anaheim, "	"CA, "	1
-	Sunset Showcase Theater	"Anaheim, "	"CA, "	1
-	Main Street Cinema	"Anaheim, "	"CA, "	6
-	AMC Anaheim Gardenwalk 6	"Anaheim, "	"CA, "	6
-	Anchorage Museum	"Anchorage, "	"AK, "	1
-	Sidney Laurence Theatre	"Anchorage, "	"AK, "	1
-	Dimond Center 9 Cinemas	"Anchorage, "	"AK, "	9
-	Cinemark Century 16 and XD	"Anchorage, "	"AK, "	16
-	Tikahtnu Commons Stadium 16 & IMAX	"Anchorage, "	"AK, "	17
-	E Street Theater	"Anchorage, "	"AK, "	1
-	Totem 8 Theatres	"Anchorage, "	"AK, "	8
-	Bear Tooth Theatre Pub	"Anchorage, "	"AK, "	1
-	Clark Cinemas	"Andalusia, "	"AL, "	3
-	Valley 11 Cinemas	"Anderson, "	"CA, "	11
-	Paramount Theatre Centre and Bal...	"Anderson, "	"IN, "	1
-	Flick Theatre	"Anderson, "	"MO, "	1
-	ACT Theatre	"Anderson, "	"SC, "	1
-	AmStar Stadium 14	"Anderson, "	"SC, "	14
-	Starlight Cinemas	"Anderson, "	"SC, "	14
-	Andover Cinema	"Andover, "	"MN, "	10
-	Andover Showplace Theatre	"Andover, "	"OH, "	1
-	Andrews Twin Cinema	"Andrews, "	"NC, "	2
-	Angels 6 Theatre	"Angels Camp, "	"CA, "	5
-	Brokaw 1 & 2 Theatre	"Angola, "	"IN, "	2
-	Ankeny 12 & B-Roll Bowling	"Ankeny, "	"IA, "	12
-	Michigan Theater	"Ann Arbor, "	"MI, "	2
+ï»¿theater_id,name,city,state,capacity
+1,13-24 Drive-In,Wabash ,IN,1
+2,13th Avenue Warren Theatre,Wichita ,KS,20
+3,142 Throckmorton Theatre,Mill Valley ,CA,1
+4,1891 Fredonia Opera House,Fredonia ,NY,1
+5,20th Century Theatre,Cincinnati ,OH,1
+6,20th Century Theatre,Juneau ,AK,2
+7,21 Drive-In,Van Buren  ,MO,1
+8,21st Street Warren Theatre,Wichita ,KS,18
+9,24:1 Cinema,Pagedale ,MO,4
+10,2nd Street Cinema,Beaumont ,CA,12
+11,309 Adult Cinema and Video,Wilkes-Barre ,PA,1
+12,3Below Theaters & Lounge,San Jose ,CA,3
+13,3M Palace Theater,Colorado City ,TX,1
+14,4 Star Cinema,Kilgore ,TX,4
+15,4-Star Theatre,San Francisco ,CA,1
+16,40th Street Theatre,Omaha ,NE,1
+17,411 Twin Drive-In,Centre ,AL,2
+18,49'er Drive-in,Valparaiso ,IN,1
+19,4th Street Theatre,Moberly ,MO,1
+20,5 Mile Drive-In,Dowagiac ,MI,1
+21,56 Auto Drive-In,Massena ,NY,1
+22,5th Avenue Cinema,Portland ,OR,2
+23,5th Avenue Theatre,La Crosse ,WI,1
+24,5th Avenue Theatre,Seattle ,WA,1
+25,66 Drive-In,Carthage ,MO,1
+26,7 Stages Theatre,Atlanta ,GA,1
+27,7th Street Theatre,Hoquiam ,WA,1
+28,88 Drive-In,Commerce City ,CO,1
+29,89er Theatre,Kingfisher ,OK,3
+30,8K Cinemas-Movie City,Edison ,NJ ,8
+31,99 W Drive-In,Newberg ,OR ,1
+32,AB Cinemas,Mount Kisco ,NY ,5
+33,ABCinema,Decatur ,IN ,2
+34,ACT Theatre,Anderson ,SC ,1
+35,ACTS Theatre,Lake Charles ,LA ,1
+36,ACX Cinema 12+,Elkhorn ,NE ,12
+37,AFI Silver Theatre,Silver Spring ,MD ,3
+38,AFS Cinema,Austin ,TX ,1
+39,AMC 19th Street East 6,New York ,NY ,6
+40,AMC 309 Cinema 9,North Wales ,PA ,9
+41,AMC 34th Street 14,New York ,NY ,14
+42,AMC 84th Street 6,New York ,NY ,6
+43,AMC 9+CO 10,Denver ,CO ,10
+44,AMC Academy 8,Greenbelt ,MD ,8
+45,AMC Ahwatukee 24,Phoenix ,AZ ,24
+46,AMC Albuquerque 12,Albuquerque ,NM ,12
+47,AMC Alderwood Mall 16,Lynnwood ,WA ,16
+48,AMC Allegany 8,Olean ,NY ,8
+49,AMC Altamonte Mall 18,Altamonte Springs ,FL ,18
+50,AMC Anaheim Gardenwalk 6,Anaheim ,CA ,6
+51,AMC Annapolis Mall 11,Annapolis ,MD ,11
+52,AMC Apple Blossom 12,Winchester ,VA ,12
+53,AMC Arapahoe Crossing 16,Aurora ,CO ,16
+54,AMC Ardmore 8,Ardmore ,OK ,8
+55,AMC Arizona Center 24,Phoenix ,AZ ,24
+56,AMC Arrowhead 14,Glendale ,AZ ,14
+57,AMC Assembly Row 12,Somerville ,MA ,12
+58,AMC Atlantic Times Square 14,Monterey Park ,CA ,14
+59,AMC Aventura 24,Aventura ,FL ,24
+60,AMC Avenue 16,Melbourne ,FL ,16
+61,AMC Avenue Forsyth 12,Cumming ,GA ,12
+62,AMC Aviation 12,Linden ,NJ ,12
+63,AMC Bakersfield 6,Bakersfield ,CA ,6
+64,AMC Barrett Commons 14,Kennesaw ,GA ,14
+65,AMC BarryWoods 24,Kansas City ,MO ,24
+66,AMC Barton Creek Square 14,Austin ,TX ,14
+67,AMC Baton Rouge 16,Baton Rouge ,LA ,16
+68,AMC Bay Plaza 13,Bronx ,NY ,13
+69,AMC Bay Street 16,Emeryville ,CA ,16
+70,AMC Bay Terrace 6,Bayside ,NY ,6
+71,AMC Bayou 15,Pensacola ,FL ,15
+72,AMC Bellevue 12,Nashville ,TN ,12
+73,AMC Birchwood 10,Fort Gratiot ,MI ,10
+74,AMC Boston Common 19,Boston ,MA ,19
+75,AMC Bowles Crossing 12,Littleton ,CO ,12
+76,AMC Bradenton 20,Bradenton ,FL ,20
+77,AMC Bradley Square 12,Cleveland ,TN ,12
+78,AMC Braintree 10,Braintree ,MA ,10
+79,AMC Brazos Mall 14,Lake Jackson ,TX ,14
+80,AMC Brentwood 14,Brentwood ,CA ,14
+81,AMC Brick Plaza 10,Brick ,NJ ,10
+82,AMC Brighton 12,Brighton ,CO ,12
+83,AMC Broadstreet 7,Philadelphia ,PA ,7
+84,AMC Broadway 4,Santa Monica ,CA ,4
+85,AMC Brunswick Square 13,East Brunswick ,NJ ,13
+86,AMC Burbank 16,Burbank CA ,,16
+87,AMC Burbank Town Center 6,Burbank ,CA ,6
+88,AMC Burbank Town Center 8,Burbank ,CA ,8
+89,AMC Burleson 14,Burleson ,TX ,14
+90,AMC Burlington Cinema 10,Burlington ,MA ,10
+91,AMC Camp Creek 14,Atlanta ,GA ,14
+92,AMC Carolina Pavilion 22,Charlotte ,NC ,22
+93,AMC Cascade Mall 14,Burlington ,WA ,14
+94,AMC Castle Rock 12,Castle Rock ,CO ,12
+95,AMC Castleton Square 14,Indianapolis ,IN ,14
+96,AMC Center Valley 16,Center Valley ,PA ,16
+97,AMC Centerpark 8,Beltsville ,MD ,8
+98,AMC Centerpoint 11,Tempe ,AZ ,11
+99,AMC Century City 15,Los Angeles ,CA ,15
+100,AMC Champaign 13,Champaign ,IL ,13
+101,AMC Chapel Hills 13,Colorado Springs ,CO ,13
+102,AMC Chattanooga 18,East Ridge ,TN ,18
+103,AMC Cherry Hill 24,Cherry Hill ,NJ ,24
+104,AMC Chicago Ridge 6,Chicago Ridge ,IL ,6
+105,AMC Chula Vista 10,Chula Vista ,CA ,10
+106,AMC Classic Albany 16,Albany ,GA ,16
+107,AMC Classic Allentown 16,Allentown ,PA ,16
+108,AMC Classic Altoona 12,Altoona ,PA ,12
+109,AMC Classic Antioch 8,Antioch ,TN ,8
+110,AMC Classic Apple Valley 14,Apple Valley ,CA ,14
+111,AMC Classic Auburn 14,Auburn ,AL ,14
+112,AMC Classic Battlefield 10,Fort Oglethorpe ,GA ,10
+113,AMC Classic Billings 10,Billings ,MT ,10
+114,AMC Classic Bloomington 11,Bloomington ,IN ,11
+115,AMC Classic Bloomsburg 11,Bloomsburg ,PA ,11
+116,AMC Classic Boerne 11,Boerne ,TX ,11
+117,AMC Classic Boulevard 10,Miramar Beach ,FL ,10
+118,AMC Classic Camp Hill 12,Camp Hill ,PA ,12
+119,AMC Classic Cartersville 12,Cartersville ,GA ,12

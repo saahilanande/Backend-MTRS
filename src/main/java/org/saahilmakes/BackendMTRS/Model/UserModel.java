@@ -10,23 +10,20 @@ public class UserModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long user_id;
-
+    private long userId;
     @NotBlank(message = "role cannot be blank")
     private String role;
+    @NotBlank(message = "Username cannot be blank")
     private String username;
-
     @NotBlank(message = "Password cannot be blank")
     private String password;
-
     @NotBlank(message = "Password cannot be blank")
     @Email(message = "Invalid Email")
     private String email;
-
     private Integer phone;
 
-    public long getUser_id() {
-        return user_id;
+    public long getUserId() {
+        return userId;
     }
 
     public String getRole() {
@@ -68,4 +65,5 @@ public class UserModel {
     public void setPhone(Integer phone) {
         this.phone = phone;
     }
+
 }
