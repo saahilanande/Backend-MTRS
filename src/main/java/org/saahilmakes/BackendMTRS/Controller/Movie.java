@@ -1,9 +1,12 @@
 package org.saahilmakes.BackendMTRS.Controller;
 
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import org.saahilmakes.BackendMTRS.Model.MovieModel;
 import org.saahilmakes.BackendMTRS.Service.MovieService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -18,10 +21,10 @@ public class Movie {
         this.movieService = movieService;
     }
 
-    @GetMapping("/latest")
-    public List<MovieModel> getAllMovies() {
-
-        List<MovieModel> movies = movieService.getLatestMovies();
+    //Get all the movies from the database
+    @GetMapping("/")
+    public List<MovieModel> getAllMovies(@Min(value = 0) @Max(value = 300) @RequestParam(value = "pageNo", required = false, defaultValue = "0") int pNo,@Min(value = 10) @Max(value = 50) @RequestParam(value = "pageSize", required = false, defaultValue = "10") int pSize) {
+        List<MovieModel> movies = movieService.getLatestMovies(pNo, pSize);
         return movies;
     }
 
