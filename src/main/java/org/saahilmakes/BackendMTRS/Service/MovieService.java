@@ -19,12 +19,9 @@ public class MovieService {
         this.movieRepo = movieRepo;
     }
 
-    public List<MovieModel> getLatestMovies() {
-        int pageNo = 0;
-        int pageize = 10;
-
-        Sort sort = Sort.by("rating").descending();
-        Pageable sortedByYear = PageRequest.of(0, 3,sort);
+    public List<MovieModel> getLatestMovies(int pageNo , int pageSize) {
+        Sort sort = Sort.by("releaseDate").descending(); //Sorting by release date
+        Pageable sortedByYear = PageRequest.of(pageNo, pageSize,sort); //Applying pagination
 
         Page<MovieModel> getTheLatestMovies = movieRepo.findAll(sortedByYear);
         List<MovieModel> listOfMovies = getTheLatestMovies.getContent();
