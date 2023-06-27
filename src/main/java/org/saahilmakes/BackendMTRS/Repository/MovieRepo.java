@@ -1,8 +1,6 @@
 package org.saahilmakes.BackendMTRS.Repository;
 
 import org.saahilmakes.BackendMTRS.Model.MovieModel;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
