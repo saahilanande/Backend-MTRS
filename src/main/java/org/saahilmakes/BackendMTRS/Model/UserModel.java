@@ -9,7 +9,7 @@ import jakarta.validation.constraints.NotBlank;
 public class UserModel {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long userId;
     @NotBlank(message = "role cannot be blank")
     private String role;
