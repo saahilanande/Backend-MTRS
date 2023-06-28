@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class MovieModel {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long movieId;
     private String title;
     private String genre;

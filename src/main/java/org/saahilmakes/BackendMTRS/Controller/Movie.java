@@ -4,10 +4,8 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import org.saahilmakes.BackendMTRS.Model.MovieModel;
 import org.saahilmakes.BackendMTRS.Service.MovieService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -26,6 +24,13 @@ public class Movie {
     public List<MovieModel> getAllMovies(@Min(value = 0) @Max(value = 300) @RequestParam(value = "pageNo", required = false, defaultValue = "0") int pNo,@Min(value = 10) @Max(value = 50) @RequestParam(value = "pageSize", required = false, defaultValue = "10") int pSize) {
         List<MovieModel> movies = movieService.getLatestMovies(pNo, pSize);
         return movies;
+    }
+
+    //Add a new movie
+    @PostMapping("/add")
+    public ResponseEntity addNewMovie(@RequestBody MovieModel movieModel){
+        ResponseEntity response = movieService.addNewMovie(movieModel);
+        return response;
     }
 
 
