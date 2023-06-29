@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/MTRS
+    username: saahil
+    password: Saahil12345
+  sql:
+    init:
+      mode: always
+
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: ${MTRS_GITHUB_CLIENTID}
+            client-secret: ${MTRS_GITHUB_SECRET}
+
+          google:
+            client-id: ${MTRS_GOOGLE_CLIENTID}
+            client-secret: ${MTRS_GOOGLE_CLIENTID}
