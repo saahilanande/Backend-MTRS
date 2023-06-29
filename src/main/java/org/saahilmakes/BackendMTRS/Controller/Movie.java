@@ -26,10 +26,17 @@ public class Movie {
         return movies;
     }
 
-    //Add a new movie
+    //Add a new movie endpoint
     @PostMapping("/add")
     public ResponseEntity addNewMovie(@RequestBody MovieModel movieModel){
         ResponseEntity response = movieService.addNewMovie(movieModel);
+        return response;
+    }
+
+    //Delete a movie by Id endpoint
+    @DeleteMapping("/delete/{id}")
+    public String deleteMovie(@PathVariable("id") Long id){
+        String response = movieService.deleteMovie(id);
         return response;
     }
 
