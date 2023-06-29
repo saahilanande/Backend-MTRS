@@ -43,4 +43,15 @@ public class MovieService {
         }
     }
 
+    //Delete a movie
+    public String deleteMovie(Long id){
+        try{
+            movieRepo.deleteById(id);
+            return "Movie Deleted Succesfully";
+        }
+        catch(Exception ex){
+            return ""+ex;
+        }
+    }
+
 }
