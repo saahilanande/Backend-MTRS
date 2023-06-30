@@ -1,0 +1,120 @@
+﻿theater_id,name,city,state,capacity
+1,13-24 Drive-In,Wabash ,IN,1
+2,13th Avenue Warren Theatre,Wichita ,KS,20
+3,142 Throckmorton Theatre,Mill Valley ,CA,1
+4,1891 Fredonia Opera House,Fredonia ,NY,1
+5,20th Century Theatre,Cincinnati ,OH,1
+6,20th Century Theatre,Juneau ,AK,2
+7,21 Drive-In,Van Buren  ,MO,1
+8,21st Street Warren Theatre,Wichita ,KS,18
+9,24:1 Cinema,Pagedale ,MO,4
+10,2nd Street Cinema,Beaumont ,CA,12
+11,309 Adult Cinema and Video,Wilkes-Barre ,PA,1
+12,3Below Theaters & Lounge,San Jose ,CA,3
+13,3M Palace Theater,Colorado City ,TX,1
+14,4 Star Cinema,Kilgore ,TX,4
+15,4-Star Theatre,San Francisco ,CA,1
+16,40th Street Theatre,Omaha ,NE,1
+17,411 Twin Drive-In,Centre ,AL,2
+18,49'er Drive-in,Valparaiso ,IN,1
+19,4th Street Theatre,Moberly ,MO,1
+20,5 Mile Drive-In,Dowagiac ,MI,1
+21,56 Auto Drive-In,Massena ,NY,1
+22,5th Avenue Cinema,Portland ,OR,2
+23,5th Avenue Theatre,La Crosse ,WI,1
+24,5th Avenue Theatre,Seattle ,WA,1
+25,66 Drive-In,Carthage ,MO,1
+26,7 Stages Theatre,Atlanta ,GA,1
+27,7th Street Theatre,Hoquiam ,WA,1
+28,88 Drive-In,Commerce City ,CO,1
+29,89er Theatre,Kingfisher ,OK,3
+30,8K Cinemas-Movie City,Edison ,NJ ,8
+31,99 W Drive-In,Newberg ,OR ,1
+32,AB Cinemas,Mount Kisco ,NY ,5
+33,ABCinema,Decatur ,IN ,2
+34,ACT Theatre,Anderson ,SC ,1
+35,ACTS Theatre,Lake Charles ,LA ,1
+36,ACX Cinema 12+,Elkhorn ,NE ,12
+37,AFI Silver Theatre,Silver Spring ,MD ,3
+38,AFS Cinema,Austin ,TX ,1
+39,AMC 19th Street East 6,New York ,NY ,6
+40,AMC 309 Cinema 9,North Wales ,PA ,9
+41,AMC 34th Street 14,New York ,NY ,14
+42,AMC 84th Street 6,New York ,NY ,6
+43,AMC 9+CO 10,Denver ,CO ,10
+44,AMC Academy 8,Greenbelt ,MD ,8
+45,AMC Ahwatukee 24,Phoenix ,AZ ,24
+46,AMC Albuquerque 12,Albuquerque ,NM ,12
+47,AMC Alderwood Mall 16,Lynnwood ,WA ,16
+48,AMC Allegany 8,Olean ,NY ,8
+49,AMC Altamonte Mall 18,Altamonte Springs ,FL ,18
+50,AMC Anaheim Gardenwalk 6,Anaheim ,CA ,6
+51,AMC Annapolis Mall 11,Annapolis ,MD ,11
+52,AMC Apple Blossom 12,Winchester ,VA ,12
+53,AMC Arapahoe Crossing 16,Aurora ,CO ,16
+54,AMC Ardmore 8,Ardmore ,OK ,8
+55,AMC Arizona Center 24,Phoenix ,AZ ,24
+56,AMC Arrowhead 14,Glendale ,AZ ,14
+57,AMC Assembly Row 12,Somerville ,MA ,12
+58,AMC Atlantic Times Square 14,Monterey Park ,CA ,14
+59,AMC Aventura 24,Aventura ,FL ,24
+60,AMC Avenue 16,Melbourne ,FL ,16
+61,AMC Avenue Forsyth 12,Cumming ,GA ,12
+62,AMC Aviation 12,Linden ,NJ ,12
+63,AMC Bakersfield 6,Bakersfield ,CA ,6
+64,AMC Barrett Commons 14,Kennesaw ,GA ,14
+65,AMC BarryWoods 24,Kansas City ,MO ,24
+66,AMC Barton Creek Square 14,Austin ,TX ,14
+67,AMC Baton Rouge 16,Baton Rouge ,LA ,16
+68,AMC Bay Plaza 13,Bronx ,NY ,13
+69,AMC Bay Street 16,Emeryville ,CA ,16
+70,AMC Bay Terrace 6,Bayside ,NY ,6
+71,AMC Bayou 15,Pensacola ,FL ,15
+72,AMC Bellevue 12,Nashville ,TN ,12
+73,AMC Birchwood 10,Fort Gratiot ,MI ,10
+74,AMC Boston Common 19,Boston ,MA ,19
+75,AMC Bowles Crossing 12,Littleton ,CO ,12
+76,AMC Bradenton 20,Bradenton ,FL ,20
+77,AMC Bradley Square 12,Cleveland ,TN ,12
+78,AMC Braintree 10,Braintree ,MA ,10
+79,AMC Brazos Mall 14,Lake Jackson ,TX ,14
+80,AMC Brentwood 14,Brentwood ,CA ,14
+81,AMC Brick Plaza 10,Brick ,NJ ,10
+82,AMC Brighton 12,Brighton ,CO ,12
+83,AMC Broadstreet 7,Philadelphia ,PA ,7
+84,AMC Broadway 4,Santa Monica ,CA ,4
+85,AMC Brunswick Square 13,East Brunswick ,NJ ,13
+86,AMC Burbank 16,Burbank CA ,,16
+87,AMC Burbank Town Center 6,Burbank ,CA ,6
+88,AMC Burbank Town Center 8,Burbank ,CA ,8
+89,AMC Burleson 14,Burleson ,TX ,14
+90,AMC Burlington Cinema 10,Burlington ,MA ,10
+91,AMC Camp Creek 14,Atlanta ,GA ,14
+92,AMC Carolina Pavilion 22,Charlotte ,NC ,22
+93,AMC Cascade Mall 14,Burlington ,WA ,14
+94,AMC Castle Rock 12,Castle Rock ,CO ,12
+95,AMC Castleton Square 14,Indianapolis ,IN ,14
+96,AMC Center Valley 16,Center Valley ,PA ,16
+97,AMC Centerpark 8,Beltsville ,MD ,8
+98,AMC Centerpoint 11,Tempe ,AZ ,11
+99,AMC Century City 15,Los Angeles ,CA ,15
+100,AMC Champaign 13,Champaign ,IL ,13
+101,AMC Chapel Hills 13,Colorado Springs ,CO ,13
+102,AMC Chattanooga 18,East Ridge ,TN ,18
+103,AMC Cherry Hill 24,Cherry Hill ,NJ ,24
+104,AMC Chicago Ridge 6,Chicago Ridge ,IL ,6
+105,AMC Chula Vista 10,Chula Vista ,CA ,10
+106,AMC Classic Albany 16,Albany ,GA ,16
+107,AMC Classic Allentown 16,Allentown ,PA ,16
+108,AMC Classic Altoona 12,Altoona ,PA ,12
+109,AMC Classic Antioch 8,Antioch ,TN ,8
+110,AMC Classic Apple Valley 14,Apple Valley ,CA ,14
+111,AMC Classic Auburn 14,Auburn ,AL ,14
+112,AMC Classic Battlefield 10,Fort Oglethorpe ,GA ,10
+113,AMC Classic Billings 10,Billings ,MT ,10
+114,AMC Classic Bloomington 11,Bloomington ,IN ,11
+115,AMC Classic Bloomsburg 11,Bloomsburg ,PA ,11
+116,AMC Classic Boerne 11,Boerne ,TX ,11
+117,AMC Classic Boulevard 10,Miramar Beach ,FL ,10
+118,AMC Classic Camp Hill 12,Camp Hill ,PA ,12
+119,AMC Classic Cartersville 12,Cartersville ,GA ,12

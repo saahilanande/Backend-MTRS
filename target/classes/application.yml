@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: prod
+
+server:
+  port: ${MTRS_PORT}
+
+JWT_KEY: ${JWT_KEY}
+
+logging:
+  level:
+    org:
+      springframework:
+        security: TRACE
+
+app:
+  oauth2:
+    redirectUri: http://localhost:5173/oauth2/redirect

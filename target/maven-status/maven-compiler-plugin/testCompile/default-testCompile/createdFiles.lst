@@ -1,0 +1,3 @@
+org\saahilmakes\BackendMTRS\BackendMtrsApplicationTests.class
+org\saahilmakes\BackendMTRS\Repository\UsersRepoTest.class
+org\saahilmakes\BackendMTRS\Service\UserServiceTest.class

@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: ${MTRS_PSQL_URL}
+    username: ${MTRS_PSQL_USERNAME}
+    password: ${MTRS_PSQL_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  sql:
+    init:
+      mode: always
+
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: ${MTRS_GITHUB_CLIENTID}
+            client-secret: ${MTRS_GITHUB_SECRET}
+
+          google:
+            client-id: ${MTRS_GOOGLE_CLIENTID}
+            client-secret: ${MTRS_GOOGLE_CLIENTID}
