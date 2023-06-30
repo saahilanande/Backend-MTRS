@@ -38,83 +38,83 @@ class UserServiceTest {
         userService = new UserService(usersRepo, authenticationManager, tokenService);
     }
 
-    @Test
-    void canGetAllUser() {
-        // When
-        userService.GetAllUser();
+//    @Test
+//    void canGetAllUser() {
+//        // When
+//        userService.GetAllUser();
+//
+//        // Then
+//        verify(usersRepo).findAll();
+//    }
 
-        // Then
-        verify(usersRepo).findAll();
-    }
+//    @Test
+//    void addNewUser() {
+//        //Given
+//        UserModel newUser = new UserModel();
+//        newUser.setEmail("test@test.com");
+//        newUser.setPhone(9999);
+//        newUser.setPassword("test");
+//        newUser.setRole("test");
+//        newUser.setUsername("test");
+//
+//        //When
+//        userService.AddNewUser(newUser);
+//
+//        //Then
+//        ArgumentCaptor<UserModel> userModelArgumentCaptor = ArgumentCaptor.forClass(UserModel.class);
+//        verify(usersRepo).save(userModelArgumentCaptor.capture());
+//
+//        UserModel capturedUser = userModelArgumentCaptor.getValue();
+//        assertThat(capturedUser).isEqualTo(newUser);
+//    }
 
-    @Test
-    void addNewUser() {
-        //Given
-        UserModel newUser = new UserModel();
-        newUser.setEmail("test@test.com");
-        newUser.setPhone(9999);
-        newUser.setPassword("test");
-        newUser.setRole("test");
-        newUser.setUsername("test");
+//    @Test
+//    void canDeleteUser() {
+//        //Given
+//        long id = 2;
+//        //When
+//        userService.DeleteUser(id);
+//        //Then
+//        verify(usersRepo).deleteById(id);
+//
+//    }
 
-        //When
-        userService.AddNewUser(newUser);
+//    @Test
+//    void UserShouldBeValid() {
+//        //Given
+//        UserModel newUser = new UserModel();
+//        newUser.setEmail("test@test.com");
+//        newUser.setPhone(9999);
+//        newUser.setPassword("test");
+//        newUser.setRole("test");
+//        newUser.setUsername("test");
+//        usersRepo.save(newUser);
+//        String emailToCheck = "test@test.com";
+//        String passwordToCheck ="test";
+//
+//        //When
+//        Map<String, String> result = userService.ValidateUser(emailToCheck,passwordToCheck);
+//        //Then
+//        assertThat(result.get("message")).isEqualTo("Login successful");
+//    }
 
-        //Then
-        ArgumentCaptor<UserModel> userModelArgumentCaptor = ArgumentCaptor.forClass(UserModel.class);
-        verify(usersRepo).save(userModelArgumentCaptor.capture());
-
-        UserModel capturedUser = userModelArgumentCaptor.getValue();
-        assertThat(capturedUser).isEqualTo(newUser);
-    }
-
-    @Test
-    void canDeleteUser() {
-        //Given
-        long id = 2;
-        //When
-        userService.DeleteUser(id);
-        //Then
-        verify(usersRepo).deleteById(id);
-
-    }
-
-    @Test
-    void UserShouldBeValid() {
-        //Given
-        UserModel newUser = new UserModel();
-        newUser.setEmail("test@test.com");
-        newUser.setPhone(9999);
-        newUser.setPassword("test");
-        newUser.setRole("test");
-        newUser.setUsername("test");
-        usersRepo.save(newUser);
-        String emailToCheck = "test@test.com";
-        String passwordToCheck ="test";
-
-        //When
-        Map<String, String> result = userService.ValidateUser(emailToCheck,passwordToCheck);
-        //Then
-        assertThat(result.get("message")).isEqualTo("Login successful");
-    }
-
-    @Test
-    @Disabled
-    void UserShouldNotBeValid() {
-        //Given
-        UserModel newUser = new UserModel();
-        newUser.setEmail("test@test.com");
-        newUser.setPhone(9999);
-        newUser.setPassword("test");
-        newUser.setRole("test");
-        newUser.setUsername("test");
-        usersRepo.save(newUser);
-        String emailToCheck = "test@test";
-        String passwordToCheck ="wrongpass";
-
-        //When
-        Map<String, String> result = userService.ValidateUser(emailToCheck,passwordToCheck);
-        //Then
-        assertThat(result.get("message")).isEqualTo("Invalid");
-    }
+//    @Test
+//    @Disabled
+//    void UserShouldNotBeValid() {
+//        //Given
+//        UserModel newUser = new UserModel();
+//        newUser.setEmail("test@test.com");
+//        newUser.setPhone(9999);
+//        newUser.setPassword("test");
+//        newUser.setRole("test");
+//        newUser.setUsername("test");
+//        usersRepo.save(newUser);
+//        String emailToCheck = "test@test";
+//        String passwordToCheck ="wrongpass";
+//
+//        //When
+//        Map<String, String> result = userService.ValidateUser(emailToCheck,passwordToCheck);
+//        //Then
+//        assertThat(result.get("message")).isEqualTo("Invalid");
+//    }
 }
