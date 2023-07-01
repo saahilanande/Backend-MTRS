@@ -18,4 +18,4 @@ spring:
 
           google:
             client-id: ${MTRS_GOOGLE_CLIENTID}
-            client-secret: ${MTRS_GOOGLE_CLIENTID}
+            client-secret: ${MTRS_GOOGLE_SECRETMTRS_GOOGLE_SECRET}
