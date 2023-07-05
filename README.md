@@ -1,5 +1,5 @@
 # Movie Ticket Reservation System (BackEnd)
-This Repository contains the code for backend of the MTRS
+This Repository contains the code for backend of the MTRS. It is hosted on Render [Link](https://mtrs.onrender.com). Running on a free tier might take some time to load initially. To access any endpoint first need to use /signup endpoint then /login endpoint to get the jwt. Working the Endpoints documentation.
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -23,7 +23,7 @@ Database - PostgreSQL
 
 Message Broker - ActiveMQ
 
-Cloud - Heroku
+Cloud - Render
 
 Unit Testing - Junit
 
@@ -48,7 +48,11 @@ Configure the database:
 
 Create a new MySQL database.
 Update the application.properties file with your database connection details.
+Do load dummy data Cvs files can be imported in the table. Files are located in resource/Data 
+
 Build and run the application:
+
+Set all the Environment variables in application.properties file
 
 Open the project in your preferred IDE (e.g., IntelliJ IDEA, Eclipse).
 Build the project and resolve any dependencies.
