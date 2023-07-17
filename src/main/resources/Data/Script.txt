@@ -1,3 +1,12 @@
-\COPY movies(movie_id,movie_img,title,release_date,rating,genre,duration) FROM 'G:\Movie Ticket Reservation System\Backend-MTRS\src\main\resources\Data\Movies.csv' DELIMITER ',' CSV HEADER;
+\COPY movies(movie_img,title,release_date,rating,genre,duration) FROM 'G:\Movie Ticket Reservation System\Backend-MTRS\src\main\resources\Data\Movies.csv' DELIMITER ',' CSV HEADER;
 
 \COPY Theaters(theater_id,name,city,state,capacity) FROM 'G:\Movie Ticket Reservation System\Backend-MTRS\src\main\resources\Data\Theaters.csv' DELIMITER ',' CSV HEADER;
+
+{
+    "title":"The Flash" ,
+    "genre":"Action/Fantasy",
+    "releaseDate": "June 16, 2023",
+    "duration":"2h 24m",
+    "rating":7.1,
+    "movieImg":"https://m.media-amazon.com/images/M/MV5BZWE2ZWE5MDQtMTJlZi00MTVjLTkxOTgtNmNiYjg2NDIxN2NhXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg"
+}

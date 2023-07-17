@@ -13,7 +13,7 @@ public class MovieModel {
     private String genre;
     private String duration;
     private String movieImg;
-    private int releaseDate;
+    private String releaseDate;
     private int rating;
 
     public long getMovieId() {
@@ -52,11 +52,11 @@ public class MovieModel {
         this.movieImg = movieImg;
     }
 
-    public int getReleaseDate() {
+    public String getReleaseDate() {
         return releaseDate;
     }
 
-    public void setReleaseDate(int releaseDate) {
+    public void setReleaseDate(String releaseDate) {
         this.releaseDate = releaseDate;
     }
 
