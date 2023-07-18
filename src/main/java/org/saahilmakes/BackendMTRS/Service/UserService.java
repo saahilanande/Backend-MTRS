@@ -81,7 +81,7 @@ public class UserService {
             return new ResponseEntity<>(data, HttpStatus.OK);
         }
         catch (BadCredentialsException ex){
-            return new ResponseEntity<>("Invalid email or password", HttpStatus.FORBIDDEN);
+            return new ResponseEntity<>("Invalid email or password", HttpStatus.NOT_FOUND);
         }
     }
 }

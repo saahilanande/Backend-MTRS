@@ -10,3 +10,48 @@
     "rating":7.1,
     "movieImg":"https://m.media-amazon.com/images/M/MV5BZWE2ZWE5MDQtMTJlZi00MTVjLTkxOTgtNmNiYjg2NDIxN2NhXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg"
 }
+
+{
+    "title":"The Little Mermaid" ,
+    "genre":"Fantasy/Musical",
+    "releaseDate": "May 26, 2023",
+    "duration":"2h 15m",
+    "rating":7.2,
+    "movieImg":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY56eLCU8tJ4dCfhJbZpLbJf-kYGXqg7H4zpNvw3HRRcmH02YY"
+}
+
+{
+    "title":"Oppenheimer" ,
+    "genre":"War/Drama",
+    "releaseDate": "July 21, 2023",
+    "duration":"3 hours",
+    "rating":9.8,
+    "movieImg":"https://pbs.twimg.com/media/FvUVt3hXgAAxP1H?format=jpg&name=900x900"
+}
+
+{
+    "title":"Mission: Impossible – Dead Reckoning" ,
+    "genre":"Action/Adventure",
+    "releaseDate": "July 21, 2023",
+    "duration":"2h 34m",
+    "rating":8.1,
+    "movieImg":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9GQZiWRkp6yyr5ak7ydC9n1zMHV9EPFRqL87XKdn9V7Xo-I7D"
+}
+
+{
+    "title":"Indiana Jones and the Dial of Destiny" ,
+    "genre":"Adventure/Action",
+    "releaseDate": "June 30, 2023",
+    "duration":"2h 34m",
+    "rating":6.9,
+    "movieImg":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTO-vtYCPi12ty1aADP6BnlZ1r2cBDgXaxpQkrIqLFrGPcHTPS9"
+}
+
+{
+    "title":"Spider-Man: Across the Spider-Verse" ,
+    "genre":"Adventure/Action",
+    "releaseDate": "June 2, 2023",
+    "duration":"2h 16m",
+    "rating":8.9,
+    "movieImg":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV9NZu6xR9Ngionw1EMXdOD3wOwVQ4RgswFd1ttoyKCdGoDQQN"
+}
