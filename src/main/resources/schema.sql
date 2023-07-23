@@ -14,7 +14,9 @@ CREATE TABLE IF NOT EXISTS Movies (
     release_date smallint,
     duration VARCHAR(255),
     rating FLOAT,
-    movie_img VARCHAR(255)
+    movie_img VARCHAR(255),
+    description VARCHAR(500),
+    status VARCHAR(100)
 );
 
 CREATE TABLE IF NOT EXISTS Theaters (
