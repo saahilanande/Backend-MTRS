@@ -10,6 +10,6 @@ import java.util.List;
 public interface ShowtimeRepo extends JpaRepository<ShowtimeModel, Long> {
 
     @Query(value = "select * from showtimes where movieId = :id", nativeQuery = true)
-    List<ShowtimeService> findShowtime(Long id);
+    List<ShowtimeModel> findShowtime(Long id);
 
 }
