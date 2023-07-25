@@ -12,7 +12,7 @@ public class ShowtimeModel {
     private Long movieId;
     private Long theaterId;
     private String startTime;
-    private String endTime;
+    private String movieDate;
 
     public Long getShowtimeId() {
         return showtimeId;
@@ -42,11 +42,11 @@ public class ShowtimeModel {
         this.startTime = startTime;
     }
 
-    public String getEndTime() {
-        return endTime;
+    public String getMovieDate() {
+        return movieDate;
     }
 
-    public void setEndTime(String endTime) {
-        this.endTime = endTime;
+    public void setMovieDate(String movieDate) {
+        this.movieDate = movieDate;
     }
 }
