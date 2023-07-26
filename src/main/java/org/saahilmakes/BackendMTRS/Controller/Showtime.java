@@ -2,10 +2,8 @@ package org.saahilmakes.BackendMTRS.Controller;
 
 import org.saahilmakes.BackendMTRS.Model.ShowtimeModel;
 import org.saahilmakes.BackendMTRS.Service.ShowtimeService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,6 +21,11 @@ public class Showtime {
     @GetMapping("/{id}")
     public List<ShowtimeModel> getMovieShowtime(@PathVariable Long id){
         return showtimeService.getShowtime(id);
+    }
+
+    @PostMapping("/add")
+    public ResponseEntity<Object> addshowtime(@RequestBody ShowtimeModel showtimeModel){
+        return showtimeService.addShowtime(showtimeModel);
     }
 
 }

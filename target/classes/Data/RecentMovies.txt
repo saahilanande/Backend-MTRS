@@ -1,0 +1,180 @@
+{
+        "movieId": 41189,
+        "title": "Doctor Strange in the Multiverse of Madness",
+        "genre": "Action/Adventure",
+        "duration": "2h 6m",
+        "movieImg": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBkJyigjLtZIh5n6Tp9Pm99opUdXtFH_QV9NWxdt2-f5mOIbq_",
+        "releaseDate": "May 26, 2023",
+        "rating": 7
+    },
+    {
+        "movieId": 41187,
+        "title": "Fantastic Beasts: The Secrets of Dumbledore",
+        "genre": "Fantasy/Adventure",
+        "duration": "2h 23m",
+        "movieImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8cJcQvqbHcEHFab5rPMZRVa9ctKGWoO_AgP6YO_DghrxGhH_p",
+        "releaseDate": "May 26, 2023",
+        "rating": 6
+    },
+    {
+        "movieId": 41172,
+        "title": "The Little Mermaid",
+        "genre": "Fantasy/Musical",
+        "duration": "2h 15m",
+        "movieImg": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY56eLCU8tJ4dCfhJbZpLbJf-kYGXqg7H4zpNvw3HRRcmH02YY",
+        "releaseDate": "May 26, 2023",
+        "rating": 7
+    },
+    {
+        "movieId": 41186,
+        "title": "Dungeons & Dragons: Honor Among Thieves",
+        "genre": "Adventure/Fantasy",
+        "duration": "1h 29m",
+        "movieImg": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaylI-DzroosJPzC82KWOz204R5oSLRLz1vy8CUQXYUaXADYwU",
+        "releaseDate": "March 31, 2023",
+        "rating": 7
+    },
+    {
+        "movieId": 41182,
+        "title": "John Wick: Chapter 4",
+        "genre": "Action/Neo-noir",
+        "duration": "2h 49m",
+        "movieImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS33DWHodvlDR_SOCQyYyqrb9Td8hvufc3zYCnnAD4PkBX4W7dF",
+        "releaseDate": "March 24, 2023",
+        "rating": 7
+    },
+    {
+        "movieId": 41175,
+        "title": "Indiana Jones and the Dial of Destiny",
+        "genre": "Adventure/Action",
+        "duration": "2h 34m",
+        "movieImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTO-vtYCPi12ty1aADP6BnlZ1r2cBDgXaxpQkrIqLFrGPcHTPS9",
+        "releaseDate": "June 30, 2023",
+        "rating": 6
+    },
+    {
+        "movieId": 41181,
+        "title": "Ruby Gillman, Teenage Kraken",
+        "genre": "Animation/Adventure",
+        "duration": "1h 31m",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BMzBhMWM2NTUtMTQ0OS00ZjEyLWJlMjgtMzcxNGZkMzAwMTMxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+        "releaseDate": "June 30, 2023",
+        "rating": 5
+    },
+    {
+        "movieId": 41190,
+        "title": "About My Father",
+        "genre": "Comedy",
+        "duration": "1h 29m",
+        "movieImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLlea3hF2GFhKqdkkA14C-THE9PWsI7ObmxMEFdH54_T-f9qv4",
+        "releaseDate": "June 26, 2023",
+        "rating": 5
+    },
+    {
+        "movieId": 41191,
+        "title": "Cha Cha Real Smooth",
+        "genre": "Drama/Comedy",
+        "duration": "1h 47m",
+        "movieImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrXtoh4Vlm6ZPTSip0FDtFpz1Y1sTHihoezS8iRrSTEYh5QrgR",
+        "releaseDate": "June 26, 2023",
+        "rating": 7
+    },
+    {
+        "movieId": 41176,
+        "title": "Spider-Man: Across the Spider-Verse",
+        "genre": "Adventure/Action",
+        "duration": "2h 16m",
+        "movieImg": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV9NZu6xR9Ngionw1EMXdOD3wOwVQ4RgswFd1ttoyKCdGoDQQN",
+        "releaseDate": "June 2, 2023",
+        "rating": 8
+    },
+    {
+        "movieId": 41171,
+        "title": "The Flash",
+        "genre": "Action/Fantasy",
+        "duration": "2h 24m",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BZWE2ZWE5MDQtMTJlZi00MTVjLTkxOTgtNmNiYjg2NDIxN2NhXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+        "releaseDate": "June 16, 2023",
+        "rating": 7
+    },
+    {
+        "movieId": 41177,
+        "title": "Joy Ride",
+        "genre": "Comedy",
+        "duration": "1h 32m",
+        "movieImg": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHyou08DzYWlQ3_uhDuKnNU8w74DiZlgn_06a6tA0YQORD4eAK",
+        "releaseDate": "July 7, 2023",
+        "rating": 7
+    },
+    {
+        "movieId": 41179,
+        "title": "Mission: Impossible – Dead Reckoning",
+        "genre": "Action/Adventure",
+        "duration": "2h 34m",
+        "movieImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9GQZiWRkp6yyr5ak7ydC9n1zMHV9EPFRqL87XKdn9V7Xo-I7D",
+        "releaseDate": "July 21, 2023",
+        "rating": 8
+    },
+    {
+        "movieId": 41173,
+        "title": "Oppenheimer",
+        "genre": "War/Drama",
+        "duration": "3 hours",
+        "movieImg": "https://pbs.twimg.com/media/FvUVt3hXgAAxP1H?format=jpg&name=900x900",
+        "releaseDate": "July 21, 2023",
+        "rating": 9
+    },
+    {
+        "movieId": 41192,
+        "title": "A Man Called Otto",
+        "genre": "Drama/Comedy",
+        "duration": "2h 6m",
+        "movieImg": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNyW4GCSoGnaHpmAk58a38S2_6yuG9abkOxdlHSEcoiQatRp3T",
+        "releaseDate": "January 13, 2023",
+        "rating": 7
+    },
+    {
+        "movieId": 41178,
+        "title": "Dune: Part Two",
+        "genre": "Sci-fi/Adventure",
+        "duration": "2h 32m",
+        "movieImg": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNgijMfbbgqI-PDhoPa4bo64fp90yrboBdgMHbcW9fg05sv4Zx",
+        "releaseDate": "Dec 2, 2023",
+        "rating": 7
+    },
+    {
+        "movieId": 41180,
+        "title": "Wonka",
+        "genre": "Fantasy/Musical",
+        "duration": "2h 34m",
+        "movieImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRWXVsWS6vVwsv6Ccz3tWCHCuO3huebtIfbax80bNOReUzxwe-",
+        "releaseDate": "Dec 15, 2023",
+        "rating": 7
+    },
+    {
+        "movieId": 41184,
+        "title": "Sisu",
+        "genre": "Action/War",
+        "duration": "1h 36m",
+        "movieImg": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY7PNQDb9IG8Q8gWf3OpLxVfyBAiSRblAMXpK9EORt1btsFtZV",
+        "releaseDate": "April 28, 2023",
+        "rating": 6
+    },
+    {
+        "movieId": 41183,
+        "title": "Evil Dead Rise",
+        "genre": "Horror/Fantasy",
+        "duration": "1h 36m",
+        "movieImg": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtFLrYbijuLSKoPRZbMbv6qQltT0hO8gL7ScQXf0v9t2p_BRQu",
+        "releaseDate": "April 21, 2023",
+        "rating": 6
+    },
+    {
+        "movieId": 41170,
+        "title": "The Flash",
+        "genre": "Action/Fantasy",
+        "duration": "2h 24m",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BZWE2ZWE5MDQtMTJlZi00MTVjLTkxOTgtNmNiYjg2NDIxN2NhXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+        "releaseDate": "2023",
+        "rating": 7
+    }

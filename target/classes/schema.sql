@@ -14,7 +14,9 @@ CREATE TABLE IF NOT EXISTS Movies (
     release_date smallint,
     duration VARCHAR(255),
     rating FLOAT,
-    movie_img VARCHAR(255)
+    movie_img VARCHAR(255),
+    description VARCHAR(500),
+    status VARCHAR(100)
 );
 
 CREATE TABLE IF NOT EXISTS Theaters (
@@ -30,8 +32,8 @@ CREATE TABLE IF NOT EXISTS Showtimes (
     showtime_id SERIAL PRIMARY KEY,
     movie_id INTEGER REFERENCES Movies(movie_id),
     theater_id INTEGER REFERENCES Theaters(theater_id),
-    start_time TIMESTAMP,
-    end_time TIMESTAMP
+    movie_date DATE,
+    start_time time
 );
 
 CREATE TABLE IF NOT EXISTS Seats (
