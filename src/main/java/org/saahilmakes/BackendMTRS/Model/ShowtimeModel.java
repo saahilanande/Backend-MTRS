@@ -1,6 +1,9 @@
 package org.saahilmakes.BackendMTRS.Model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
+
+import java.sql.Date;
 
 @Entity
 @Table(name = "showtimes")
@@ -12,7 +15,9 @@ public class ShowtimeModel {
     private Long movieId;
     private Long theaterId;
     private String startTime;
-    private String movieDate;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    private Date movieDate;
 
     public Long getShowtimeId() {
         return showtimeId;
@@ -42,11 +47,11 @@ public class ShowtimeModel {
         this.startTime = startTime;
     }
 
-    public String getMovieDate() {
+    public Date getMovieDate() {
         return movieDate;
     }
 
-    public void setMovieDate(String movieDate) {
+    public void setMovieDate(Date movieDate) {
         this.movieDate = movieDate;
     }
 }

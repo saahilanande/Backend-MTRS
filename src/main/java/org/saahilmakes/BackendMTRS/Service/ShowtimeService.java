@@ -2,8 +2,11 @@ package org.saahilmakes.BackendMTRS.Service;
 
 import org.saahilmakes.BackendMTRS.Model.ShowtimeModel;
 import org.saahilmakes.BackendMTRS.Repository.ShowtimeRepo;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.Executable;
 import java.util.List;
 
 @Service
@@ -25,8 +28,16 @@ public class ShowtimeService {
 
     }
 
-    //This endpoint add a showtime for a movie with seat capacity
-    public void addShowtime() {
+    //This endpoint add a showtime for a movie
+    public ResponseEntity<Object> addShowtime(ShowtimeModel showtimeModel) {
+
+        try {
+            showtimeRepo.save(showtimeModel);
+            return new ResponseEntity<>("Movie Added Succesfully", HttpStatus.OK);
+        }
+        catch (Exception ex){
+            return new ResponseEntity<>(""+ex, HttpStatus.BAD_REQUEST);
+        }
 
     }
 

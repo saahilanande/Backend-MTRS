@@ -32,8 +32,8 @@ CREATE TABLE IF NOT EXISTS Showtimes (
     showtime_id SERIAL PRIMARY KEY,
     movie_id INTEGER REFERENCES Movies(movie_id),
     theater_id INTEGER REFERENCES Theaters(theater_id),
-    movie_date date,
-    start_time time,
+    movie_date DATE,
+    start_time time
 );
 
 CREATE TABLE IF NOT EXISTS Seats (
