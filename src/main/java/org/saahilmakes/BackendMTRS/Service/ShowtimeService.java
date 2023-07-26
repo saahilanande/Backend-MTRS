@@ -33,7 +33,7 @@ public class ShowtimeService {
 
         try {
             showtimeRepo.save(showtimeModel);
-            return new ResponseEntity<>("Movie Added Succesfully", HttpStatus.OK);
+            return new ResponseEntity<>("Showtime Added Succesfully", HttpStatus.OK);
         }
         catch (Exception ex){
             return new ResponseEntity<>(""+ex, HttpStatus.BAD_REQUEST);
