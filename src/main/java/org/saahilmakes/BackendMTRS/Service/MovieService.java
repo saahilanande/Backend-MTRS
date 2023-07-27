@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class MovieService {
@@ -22,9 +23,9 @@ public class MovieService {
     }
 
     //Get all movies service
-    public List<MovieModel> getLatestMovies(int pageNo , int pageSize) {
+    public List<MovieModel> getLatestMovies(int pageNo, int pageSize) {
         Sort sort = Sort.by("releaseDate").descending(); //Sorting by release date
-        Pageable sortedByYear = PageRequest.of(pageNo, pageSize,sort); //Applying pagination
+        Pageable sortedByYear = PageRequest.of(pageNo, pageSize, sort); //Applying pagination
 
         Page<MovieModel> getTheLatestMovies = movieRepo.findAll(sortedByYear);
         List<MovieModel> listOfMovies = getTheLatestMovies.getContent();
@@ -33,25 +34,28 @@ public class MovieService {
     }
 
     //Add a new movie
-    public ResponseEntity<Object> addNewMovie(MovieModel movieModel){
-        try{
+    public ResponseEntity<Object> addNewMovie(MovieModel movieModel) {
+        try {
             movieRepo.save(movieModel);
             return new ResponseEntity<>("Movie Added Succesfully", HttpStatus.OK);
-        }
-        catch (Exception ex){
-            return new ResponseEntity<>(""+ex, HttpStatus.BAD_REQUEST);
+        } catch (Exception ex) {
+            return new ResponseEntity<>("" + ex, HttpStatus.BAD_REQUEST);
         }
     }
 
     //Delete a movie
-    public String deleteMovie(Long id){
-        try{
+    public String deleteMovie(Long id) {
+        try {
             movieRepo.deleteById(id);
             return "Movie Deleted Succesfully";
+        } catch (Exception ex) {
+            return "" + ex;
         }
-        catch(Exception ex){
-            return ""+ex;
-        }
+    }
+
+    //Endpoint to get a single movie detail
+    public Optional<MovieModel> getMovieDetails(Long id) {
+        return movieRepo.findById(id);
     }
 
 }
