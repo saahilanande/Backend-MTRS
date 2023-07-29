@@ -1,12 +1,12 @@
 package org.saahilmakes.BackendMTRS.Service;
 
 import org.saahilmakes.BackendMTRS.Model.ShowtimeModel;
+import org.saahilmakes.BackendMTRS.Repository.MovieShowtimeRepo;
 import org.saahilmakes.BackendMTRS.Repository.ShowtimeRepo;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import java.lang.reflect.Executable;
 import java.util.List;
 
 @Service
@@ -14,8 +14,11 @@ public class ShowtimeService {
 
     private final ShowtimeRepo showtimeRepo;
 
-    public ShowtimeService(ShowtimeRepo showtimeRepo) {
+    private final MovieShowtimeRepo movieShowtimeRepo;
+
+    public ShowtimeService(ShowtimeRepo showtimeRepo, MovieShowtimeRepo movieShowtimeRepo) {
         this.showtimeRepo = showtimeRepo;
+        this.movieShowtimeRepo = movieShowtimeRepo;
     }
 
     //This service to get all the showtimes for a movie

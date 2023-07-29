@@ -8,7 +8,7 @@ import java.sql.Date;
 
 @Entity
 @Table(name = "movieshowtime")
-public class movieShowtimeModel {
+public class MovieShowtimeModel {
 
     private Long movieId;
     private String name;
