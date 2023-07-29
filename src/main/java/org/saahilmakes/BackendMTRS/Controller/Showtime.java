@@ -1,5 +1,6 @@
 package org.saahilmakes.BackendMTRS.Controller;
 
+import org.saahilmakes.BackendMTRS.Model.MovieShowtimeModel;
 import org.saahilmakes.BackendMTRS.Model.ShowtimeModel;
 import org.saahilmakes.BackendMTRS.Service.ShowtimeService;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +20,7 @@ public class Showtime {
 
     //This endpoint get all the showtimes for a movie
     @GetMapping("/{id}")
-    public List<ShowtimeModel> getMovieShowtime(@PathVariable Long id){
+    public List<MovieShowtimeModel> getMovieShowtime(@PathVariable Long id){
         return showtimeService.getShowtime(id);
     }
 
