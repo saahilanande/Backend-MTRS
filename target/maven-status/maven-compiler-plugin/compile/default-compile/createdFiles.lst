@@ -1,5 +1,6 @@
 org\saahilmakes\BackendMTRS\Controller\Home.class
 org\saahilmakes\BackendMTRS\Service\TokenService.class
+org\saahilmakes\BackendMTRS\Model\MovieShowtimeId.class
 org\saahilmakes\BackendMTRS\Repository\UsersRepo.class
 org\saahilmakes\BackendMTRS\BackendMtrsApplication.class
 org\saahilmakes\BackendMTRS\Repository\MovieShowtimeRepo.class

@@ -11,6 +11,7 @@ G:\Movie Ticket Reservation System\Backend-MTRS\src\main\java\org\saahilmakes\Ba
 G:\Movie Ticket Reservation System\Backend-MTRS\src\main\java\org\saahilmakes\BackendMTRS\Service\UserSecurity.java
 G:\Movie Ticket Reservation System\Backend-MTRS\src\main\java\org\saahilmakes\BackendMTRS\BackendMtrsApplication.java
 G:\Movie Ticket Reservation System\Backend-MTRS\src\main\java\org\saahilmakes\BackendMTRS\Model\ShowtimeModel.java
+G:\Movie Ticket Reservation System\Backend-MTRS\src\main\java\org\saahilmakes\BackendMTRS\Model\MovieShowtimeId.java
 G:\Movie Ticket Reservation System\Backend-MTRS\src\main\java\org\saahilmakes\BackendMTRS\Repository\MovieShowtimeRepo.java
 G:\Movie Ticket Reservation System\Backend-MTRS\src\main\java\org\saahilmakes\BackendMTRS\Model\MovieShowtimeModel.java
 G:\Movie Ticket Reservation System\Backend-MTRS\src\main\java\org\saahilmakes\BackendMTRS\Service\UserService.java
