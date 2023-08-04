@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class TheaterService {
@@ -20,6 +21,10 @@ public class TheaterService {
     public List<TheaterModel> getTheater(){
        return theaterRepo.findAll();
 
+    }
+
+    public Optional<TheaterModel> getTheaterWithId(Long id){
+        return theaterRepo.findById(id);
     }
 
     public ResponseEntity<String> addTheater(TheaterModel theaterModel){

@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/theater")
@@ -20,6 +21,11 @@ public class Theater {
     @GetMapping("/")
     public List<TheaterModel> getTheater(){
         return theaterService.getTheater();
+    }
+
+    @GetMapping("/{id}")
+    public Optional<TheaterModel> getTheaterWithId(@PathVariable Long id){
+        return theaterService.getTheaterWithId(id);
     }
 
     @PostMapping("/add")
