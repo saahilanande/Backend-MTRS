@@ -2,3 +2,13 @@
 
 \COPY Theaters(theater_id,name,city,state,capacity) FROM 'G:\Movie Ticket Reservation System\Backend-MTRS\src\main\resources\Data\Theaters.csv' DELIMITER ',' CSV HEADER;
 
+create view movieshowtime as
+select m.movie_id,
+t.theater_id,t.name, t.address,t.city,
+s.movie_date, STRING_AGG(s.start_time, ', ') AS start_times
+from showtimes s
+inner join theaters t
+on s.theater_id = t.theater_id
+inner join movies m
+on s.movie_id = m.movie_id
+group by m.movie_id, t.name,t.address,t.city,t.theater_id,s.movie_date;
