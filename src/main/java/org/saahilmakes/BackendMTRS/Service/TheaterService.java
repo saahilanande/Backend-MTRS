@@ -2,6 +2,8 @@ package org.saahilmakes.BackendMTRS.Service;
 
 import org.saahilmakes.BackendMTRS.Model.TheaterModel;
 import org.saahilmakes.BackendMTRS.Repository.TheaterRepo;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,5 +20,14 @@ public class TheaterService {
     public List<TheaterModel> getTheater(){
        return theaterRepo.findAll();
 
+    }
+
+    public ResponseEntity<String> addTheater(TheaterModel theaterModel){
+        try {
+            theaterRepo.save(theaterModel);
+            return new ResponseEntity<>("Theater Added Succesfully", HttpStatus.OK);
+        } catch (Exception ex) {
+            return new ResponseEntity<>("" + ex, HttpStatus.BAD_REQUEST);
+        }
     }
 }
