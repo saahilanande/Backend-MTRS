@@ -16,15 +16,19 @@ public class MovieShowtimeModel {
     @Id
     private Long movieId;
 
+    private Long theaterId;
     @Id
     private String name;
     private String address;
     private String city;
-
     @Id
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date movieDate;
     private String startTimes;
+
+    public Long getTheaterId() {
+        return theaterId;
+    }
 
     public Long getMovieId() {
         return movieId;
