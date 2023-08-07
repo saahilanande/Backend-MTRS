@@ -5,12 +5,16 @@ org\saahilmakes\BackendMTRS\Repository\UsersRepo.class
 org\saahilmakes\BackendMTRS\BackendMtrsApplication.class
 org\saahilmakes\BackendMTRS\Repository\MovieShowtimeRepo.class
 org\saahilmakes\BackendMTRS\Config\SecurityConfig.class
+org\saahilmakes\BackendMTRS\Controller\Theater.class
+org\saahilmakes\BackendMTRS\Service\TheaterService.class
 org\saahilmakes\BackendMTRS\Model\MovieModel.class
 org\saahilmakes\BackendMTRS\Model\MovieShowtimeModel.class
 org\saahilmakes\BackendMTRS\Controller\Users.class
 org\saahilmakes\BackendMTRS\Service\UserService.class
+org\saahilmakes\BackendMTRS\Model\TheaterModel.class
 org\saahilmakes\BackendMTRS\Repository\MovieRepo.class
 org\saahilmakes\BackendMTRS\Model\ShowtimeModel.class
+org\saahilmakes\BackendMTRS\Repository\TheaterRepo.class
 org\saahilmakes\BackendMTRS\Service\ShowtimeService.class
 org\saahilmakes\BackendMTRS\Service\MovieService.class
 org\saahilmakes\BackendMTRS\Service\UserSecurity.class
