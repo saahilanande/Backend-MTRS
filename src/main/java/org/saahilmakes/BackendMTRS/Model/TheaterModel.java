@@ -15,7 +15,7 @@ public class TheaterModel {
     private String address;
     private String city;
     private String state;
-    private int capacity;
+    private String capacity;
 
     public Long getTheaterId() {
         return theaterId;
@@ -53,11 +53,11 @@ public class TheaterModel {
         this.state = state;
     }
 
-    public int getCapacity() {
+    public String getCapacity() {
         return capacity;
     }
 
-    public void setCapacity(int capacity) {
+    public void setCapacity(String capacity) {
         this.capacity = capacity;
     }
 
